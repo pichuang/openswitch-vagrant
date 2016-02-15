@@ -5,7 +5,6 @@ Requirement
   * [vagrant](https://www.vagrantup.com)
   * [ansible](http://www.ansible.com)
 
-Step:
+First use:
 * vagrant box add ubuntu/trusty64
-* vagrant up --provider=virutalbox
-* vagrant ssh
+* ./start-ops-builder.sh
