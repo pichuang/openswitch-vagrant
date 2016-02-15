@@ -21,10 +21,10 @@ Vagrant.configure(2) do |config|
     v.cpus = 2
   end
 
+#TODO: Need support Ansible 2.0
   #Configuration Management -- Ansible
 #  config.vm.provision "ansible" do |ansible|
 #    ansible.playbook = "provisioning/playbook.yml"
-#    ansible.inventory_path = "provisioning/hosts"
 #    ansible.sudo = "true"
 #  end
 end

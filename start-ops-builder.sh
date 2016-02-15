@@ -11,11 +11,11 @@ vagrant up --no-provision --provider=virtualbox
 NEW_IP=$(vagrant ssh-config | grep HostName | awk '{print $2}')
 echo
 echo "New IP Address:" $NEW_IP
-#sed -in "s/1.1.1.1/$NEW_IP/g" ./provisioning/hosts
+sed -i "s/1.1.1.1/$NEW_IP/g" ./provisioning/hosts
 
 echo
 echo "Vagrant provision"
-#vagrant provision
+vagrant provision
 
 echo
 echo "Vagrant SSH"
